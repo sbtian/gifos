@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $font-size-root;
+    font-family: $font-family-robo;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+%link-normal{
+    text-decoration: none;
+    font-family: $font-family-mont;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+%link-hover{
+    color: var(--color-primary);
+    text-decoration: none;
+    border-bottom:  $color-secondary 2px solid;
+}
+
+%link-active{
+    color: rgba(6,10,36,0.56);
+}
+
+%button-circle{
+    background: white;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    text-align: center;                     
+    height: 60px;
+    line-height: 60px;  
+    width: 60px;  
+    font-size: 2em;
+    cursor: pointer;
+    a{
+        color: var(--bg-others);
+    }
+}
+
+%button-circle-hover{
+    a{
+        color: white;
+        border: none;
+        text-decoration: none;
+    }
+    background: #572EE5;
+    border: 1px solid #572EE5;
+}
+
+%button-normal{
+    background-color: $color-secondary;
+    font-family: $font-family-mont;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    border: none;
+    height: 3.5rem;
+    width: 30%;
+    cursor: pointer;
+}
+
+%button-hover{
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(225deg, var(--color-primary) 0%, $color-secondary 100%);
+}
+
+%button-focus{
+    outline: none;
+}
+
+%button-option{
+    outline: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin: 7px 7px;
+    border: none;
+}
+%button-option-modal{
+    outline: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin: 7px 7px;
+    border: 1px solid #9CAFC3;
+    border-radius: 6px;
+    border-radius: 6px;
+}
+
+%button-option-hover{
+    opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    // // overflow: auto; /* Enable scroll if needed */
+    // background-color: rgb(0,0,0); /* Fallback color */
+    // background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: #fefefe;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    // margin: 15% auto; /* 15% from the top and centered */
+    // padding: 20px;
+    // border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin: 10%;
+    /* The Close Button */
+
+    .modal__content--close{
+        display: flex;
+        justify-content: flex-end;
+        .close {
+          color: #572EE5;
+          font-size: 56px;
+        //   font-weight: bold;
+        //   margin: 200px 0 0 200px;
+        }
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+    }
+  
+    #modal__content--item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 450px;
+        }
+        .modal__item--content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 70%;
+            margin-top: 15px;
+
+            .modal__item__detail{
+                color: #000;
+                font-size: 16px;
+                font-family: $font-family-robo;
+                font-weight: 700;
+            }
+
+            .modal__item__buttons{
+                display: flex;
+                justify-content: flex-end;
+                    
+                .button_favorito{
+                    @extend %button-option-modal;
+                    background: url('../images/icon-fav.svg') no-repeat;
+                    &:hover{
+                        background: url('../images/icon-fav-hover.svg') no-repeat;                                
+                    }
+                }
+
+                .button_download{
+                    @extend %button-option-modal;
+                    background: url('../images/icon-download.svg') no-repeat; 
+                    &:hover{
+                        background: url('../images/icon-download-hover.svg') no-repeat;
+                    }
+                }
+            }
+
+        }
+    }
+  
+  
+  }

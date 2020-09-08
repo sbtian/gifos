@@ -1,0 +1,23 @@
+html{
+    --color-primary: #572EE5;
+    --bg-color: #fff;
+    --bg-trending: #F3F5F8;
+    --bg-others: #572EE5;
+    --image-logo: url('../images/logo-desktop.svg');
+    --color-text: #000;
+}
+
+[data-theme="dark"] {
+    --color-primary: #fff;
+    --bg-color: #37383C;
+    --bg-trending: #222326;
+    --bg-others: #000;
+    --image-logo: url('../images/Logo-modo-noc.svg');
+    --color-text: #fff;
+}
+$font-size-root: 13px;
+$font-family-mont: 'Montserrat', sans-serif;
+$font-family-robo: 'Roboto', sans-serif;
+$color-secondary: #50E3C2;
+$color-disabled: #9CAFC3;
+$bg-items: #572EE5;

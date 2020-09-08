@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gifos</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-logo"><a href="/index.html"></a></div>
+            <ul class="header__nav--items">
+                <li class="header__nav--item"><a href="#" onclick="theme_switch()">MODO NOCTURNO</a></li>
+                <li class="header__nav--item"><a href="/favoritos.html">FAVORITOS</a></li>
+                <li class="header__nav--item"><a href="/mis_gifs.html">MIS GIFOS</a></li>
+                <li class="header__nav--item"><div class="header__nav--item-more"><a href="/crear_gif.html">+</a></div></li>
+            </ul>
+        </nav>
+        <section class="header__content--favoritos">
+            <img src="assets/images/icon-favoritos.svg" alt="imagen favoritos">
+            <h2 class="content__favoritos--title">Favoritos</h2>
+        </section>
+    </header>
+    <main class="main_favoritos">
+        <section class="main_favoritos__content">
+            <div id="favoritos_resultado" class="main_favoritos__content--items">
+        
+            </div>
+            <div class="main__favoritos--noResult">
+                <img src="assets/images/icon-fav-sin-contenido.svg" alt="Imagen favoritos sin resultados">
+                <span class="main_favoritos__content--title_noResult">"¡Guarda tu primer GIFO en Favoritos<br> 
+                    para que se muestre aquí!"</span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__brands">
+            <span>Compartir en:</span>
+            <a href="https://facebook.com" target="_blank"><span><img src="assets/images/icon_facebook.svg" alt="icono facebook"></span></a>
+            <a href="https://twitter.com" target="_blank"><span><img src="assets/images/icon_twitter_noc.svg" alt="icono twitter"></i></span></a>
+            <a href="https://instagram.com" target="_blank"><span><img src="assets/images/icon_instagram.svg" alt="icono instagram"></span></a>            
+        </div>
+        <span>© GIFOS 2020 All Rights Reserved.</span>
+    </footer>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal__content--close">
+            <span class="close">&times;</span>
+        </div>
+      <div id="modal__content--item">
+      </div>
+    </div>
+  
+  </div>
+    <script src="assets/js/Gifo.js"></script>
+    <script src="assets/js/favoritos.js"></script>
+</body>
+</html>

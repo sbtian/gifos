@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gifos</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-logo"><a href="/index.html"></a></div>
+            <ul class="header__nav--items">
+                <li class="header__nav--item"><a href="#" onclick="theme_switch()">MODO NOCTURNO</a></li>
+                <li class="header__nav--item"><a href="/favoritos.html">FAVORITOS</a></li>
+                <li class="header__nav--item"><a href="/mis_gifs.html">MIS GIFOS</a></li>
+                <li class="header__nav--item"><div class="header__nav--item-more"><a href="/crear_gif.html">+</a></div></li>
+            </ul>
+        </nav>
+        <section class="header__content--misGifs">
+            <img src="assets/images/icon-mis-gifos.svg" alt="imagen mis gifs">
+            <h2 class="content__misGifs--title">Mis Gifos</h2>
+        </section>
+    </header>
+    <main class="main_misGifs">
+        <section class="main_misGifs__content">
+            <img src="assets/images/icon-mis-gifos-sin-contenido.svg" alt="Imagen mis Gifs sin resultados">
+            <h2 class="main_misGifs__content--title_noResult">¡Anímate a crear tu primer GIFO!</h2>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__brands">
+            <span>Compartir en:</span>
+            <a href="https://facebook.com" target="_blank"><span><img src="assets/images/icon_facebook.svg" alt="icono facebook"></span></a>
+            <a href="https://twitter.com" target="_blank"><span><img src="assets/images/icon_twitter_noc.svg" alt="icono twitter"></i></span></a>
+            <a href="https://instagram.com" target="_blank"><span><img src="assets/images/icon_instagram.svg" alt="icono instagram"></span></a>            
+        </div>
+        <span>© GIFOS 2020 All Rights Reserved.</span>
+    </footer>
+    <script src="assets/js/Gifo.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

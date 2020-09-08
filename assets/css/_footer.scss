@@ -1,0 +1,18 @@
+.footer{
+    margin-top: auto;
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--bg-others);
+    font-family: $font-family-robo;
+    color: var(--color-text);
+    
+    .footer__brands{
+        padding: 0;
+
+        span{
+            padding: 0 10px;
+        }
+    }
+}
